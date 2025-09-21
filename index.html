@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>École Coranique - Accueil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="assets/logo.png" alt="Logo" class="logo">
+      <h1>École Coranique</h1>
+    </div>
+    <nav class="nav-right">
+      <ul>
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="tendance.html">Tendance</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="accueil" class="hero">
+    <div class="hero-text">
+      <h2>Bienvenue sur la plateforme de gestion des écoles coraniques</h2>
+      <p>Gérez vos élèves, vos Oustages et vos cours avec simplicité et sécurité.</p>
+      <button id="loginBtn" class="btn">Se connecter avec Google</button>
+    </div>
+    <div class="hero-image">
+      <img src="assets/images/hero.png" alt="Gestion école">
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <h2>Nos Services</h2>
+    <div class="cards">
+      <div class="card">📚 Gestion des élèves</div>
+      <div class="card">👨‍🏫 Gestion des Oustages</div>
+      <div class="card">🕌 Organisation des cours</div>
+      <div class="card">📊 Suivi des présences et notes</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contactez-nous</h2>
+    <p>Pour plus d’informations, visitez : 
+      <a href="https://ton-site-web.com" target="_blank">https://ton-site-web.com</a>
+    </p>
+    <form>
+      <input type="text" placeholder="Nom" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Votre message" required></textarea>
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 École Coranique - Tous droits réservés</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

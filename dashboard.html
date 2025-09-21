@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - École Coranique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="assets/logo.png" alt="Logo" class="logo">
+      <h1>Dashboard</h1>
+    </div>
+    <nav class="nav-right">
+      <ul>
+        <li><a href="dashboard.html#overview">Vue d’ensemble</a></li>
+        <li><a href="dashboard.html#students">Élèves</a></li>
+        <li><a href="dashboard.html#teachers">Oustages</a></li>
+        <li><a href="dashboard.html#settings">Paramètres</a></li>
+        <li><button id="logoutBtn" class="btn small">Déconnexion</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenu -->
+  <main class="section">
+    <h2>Bienvenue <span id="userName"></span></h2>
+    <p>Rôle : <span id="userRole"></span></p>
+
+    <div id="dashboardContent">
+      <!-- Sections chargées par app.js -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 École Coranique</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

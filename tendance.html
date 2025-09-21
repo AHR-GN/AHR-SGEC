@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tendance Actuelle - École Coranique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="assets/logo.png" alt="Logo" class="logo">
+      <h1>Tendance</h1>
+    </div>
+    <nav class="nav-right">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="tendance.html" class="active">Tendance</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><button id="logoutBtn" class="btn small">Déconnexion</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Publications -->
+  <main class="section">
+    <h2>Publications des écoles</h2>
+    <div id="postsContainer" class="cards"></div>
+
+    <!-- Zone Admin -->
+    <div id="adminPostArea" class="admin-area hidden">
+      <h3>Publier une nouvelle photo (réservé aux Admins)</h3>
+      <form id="postForm">
+        <input type="text" id="caption" placeholder="Texte de la publication" required>
+        <input type="file" id="imageUpload" accept="image/*" required>
+        <button type="submit" class="btn">Publier</button>
+      </form>
+      <p id="cooldownMessage" class="hidden">⏳ Vous pouvez publier une nouvelle image dans 48h.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 École Coranique</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
